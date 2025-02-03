@@ -27,9 +27,9 @@ requirements:
 test:
   commands:
     - test -d ${PREFIX}/include/Spectra  # [unix]
-    - test -d ${PREFIX}/share/spectra/cmake  # [unix]
+    - test -d ${PREFIX}/share/cmake/Spectra  # [unix]
     - test -f ${PREFIX}/include/Spectra/GenEigsBase.h  # [unix]
-    - test -f ${PREFIX}/share/spectra/cmake/spectra-config.cmake  # [unix]
+    - test -f ${PREFIX}/share/cmake/Spectra/spectra-config.cmake  # [unix]
     - if exist %LIBRARY_PREFIX%\include\Spectra\GenEigsBase.h (exit 0) else (exit 1)  # [win]
     - if exist %LIBRARY_PREFIX%\share\spectra\cmake\spectra-config.cmake (exit 0) else (exit 1)  # [win]
 
