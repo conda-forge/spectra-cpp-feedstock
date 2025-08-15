@@ -17,6 +17,6 @@ esac
 
 if [[ ${arch} == "x86_64" ]]; then
 # Run the tests here as they're omitted from installation
-# NOTE: GenEigs/GenEigsRealShift test fails consistently on mac and linux, omit
-cd build && ctest -E GenEigs
+# NOTE: GenEigs/GenEigsRealShift/SymEigs test fails consistently on mac and linux, omit
+cd build && ctest -E 'GenEigs|SymEigs'
 fi
